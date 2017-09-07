@@ -5,8 +5,7 @@ $Reference = [
 
   ['Titre' => 'Telephone2', 'Description' => 'BlaBla2', 'Image' => '', 'Texte' => 'Texte2'],
 
-  ['Titre' => 'Telephone3', 'Description' => 'BlaBla3', 'Image' => '', 'Texte' => 'Texte3'],
-
+  ['Titre' => 'Telephone3', 'Description' => 'BlaBla3', 'Image' => '', 'Texte' => 'Texte3']
 ];
 
 

@@ -24,14 +24,16 @@ include "Reference.php";
 
 	 ?>
 
-		<div class="card" style="width: 20rem;">
-			  <img class="card-img-top" src="..." alt="Card image cap">
+		<article class="card" style="width: 20rem;">
+			<figure class="imageBonbon"> 
+			  <img class="card-img-top" src=<?php echo $value['Image']?> alt="Card image cap">
+			</figure>
 			  <div class="card-block">
 			    <h4 class="card-title"><?php echo $value['Titre']?></h4>
 			    <p class="card-text"><?php echo $value['Description']?></p>
-			    <a href="#" class="btn btn-primary">Go somewhere</a>
+			    <a href="produit.php" class="btn btn-primary">Voir plus</a>
 			  </div>
-			</div>
+		</article>
 <?php	}
 ?>
 	</section>		

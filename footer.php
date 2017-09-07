@@ -16,7 +16,7 @@
     </head>
     <body>
         <section id="footer">
-            <p>Site de vente de telephones</p>
+            <p>Site de vente de bonbons</p>
         </section>
     </body>
 </html>

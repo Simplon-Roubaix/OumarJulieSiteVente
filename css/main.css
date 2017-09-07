@@ -100,14 +100,18 @@ textarea {
 
 
 
+/* SECTION CARTES ACCUEIL */
+
+#cartes {
+    display: flex;
+}
+.card {
+    margin: 2em;
+}
 
 
 
-
-
-
-
-
+/* MISE EN FORME DU FOOTER */
 #footer {
     width: 100%;
     background-color: lightgrey;

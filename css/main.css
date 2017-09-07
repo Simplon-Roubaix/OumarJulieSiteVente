@@ -116,10 +116,11 @@ textarea {
         padding-top: 2em;
         padding-bottom: 2em;
         margin-top: 2em;
+        color: white;
     }
 
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 700px) {
     /* SECTION CARTES ACCUEIL */
 
     #cartes {

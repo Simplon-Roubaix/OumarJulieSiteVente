@@ -94,22 +94,40 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+    .card {
+        width: 80%;
+        margin: auto;
+        margin-top: 2em;
+    }
+    .imageBonbon {
+        width: 100%;
+        margin: auto;
+    }
+    .imageBonbon img {
+        width: 100%;
+        max-height: 200px;
+    }
+
+    /* MISE EN FORME DU FOOTER */
+    #footer {
+        width: 100%;
+        background-color: lightgrey;
+        text-align: center;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        margin-top: 2em;
+    }
 
 
+@media only screen and (min-width: 960px) {
+    /* SECTION CARTES ACCUEIL */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    #cartes {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
 
 /* ==========================================================================
    Helper classes

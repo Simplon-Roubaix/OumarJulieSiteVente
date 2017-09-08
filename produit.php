@@ -20,6 +20,8 @@
   <figure class="imageBonbon">
     <img class="card-img-top" src="<?php echo $Reference[1]['Image']; ?>" alt="Card image cap">
   </figure>
+
+  <p><?php echo $Reference[1]['Description'];?></p>
     <!-- <div class="card-block">
       <h4 class="card-title"><?php echo $value['Titre']?></h4>
       <p class="card-text"><?php echo $value['Description']?></p>

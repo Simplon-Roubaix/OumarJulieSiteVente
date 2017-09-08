@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
+
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -16,7 +17,7 @@
 
 <header>
   <div id="header">
-    <a href="" id="logo">CandyLand</a>
+  <h1 id="logo">CandyLand</h1>
     <ul id="menu">
       <!-- <li><a href="/"><span>Home</span></a></li>
       <li><a href="/"><span>Tutorials</span></a></li>

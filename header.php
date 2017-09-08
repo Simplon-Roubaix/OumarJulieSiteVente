@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
   <head>
 
     <meta charset="utf-8">
@@ -15,19 +15,12 @@
     </nav> -->
 
 
-<header>
-  <div id="header">
-  <h1 id="logo">CandyLand</h1>
-    <ul id="menu">
-      <!-- <li><a href="/"><span>Home</span></a></li>
-      <li><a href="/"><span>Tutorials</span></a></li>
-      <li><a href="/"><span>Articles</span></a></li>
-      <li><a href="/"><span>About me</span></a></li>
-      <li><a href="/"><span>Contact</span></a></li> -->
-    </ul>
-  </div>
-</header>
-
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-3">Fluid jumbotron</h1>
+        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+      </div>
+    </div>
 
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>

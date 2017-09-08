@@ -2,19 +2,29 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
     <title>Header</title>
   </head>
   <body>
-    <nav class="navbar navbar-inverse bg-inverse">
+    <!-- <nav class="navbar navbar-inverse bg-inverse">
       <a class="navbar-brand" href="#">Bonbons</a>
 
-    </nav>
+    </nav> -->
 
 
 <header>
-
+  <div id="header">
+    <a href="" id="logo">CandyLand</a>
+    <ul id="menu">
+      <!-- <li><a href="/"><span>Home</span></a></li>
+      <li><a href="/"><span>Tutorials</span></a></li>
+      <li><a href="/"><span>Articles</span></a></li>
+      <li><a href="/"><span>About me</span></a></li>
+      <li><a href="/"><span>Contact</span></a></li> -->
+    </ul>
+  </div>
 </header>
 
 

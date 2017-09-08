@@ -23,13 +23,13 @@
   </figure>
   <h2><?php echo $Reference[1]['Titre']; ?></h2>
 
-  <p><?php echo $Reference[1]['Description'];?></p>
     <!-- <div class="card-block">
       <h4 class="card-title"><?php echo $value['Titre']?></h4>
       <p class="card-text"><?php echo $value['Description']?></p>
     </div> -->
 
   </div>
+  <p><?php echo $Reference[1]['Description'];?></p>
 
     <?php //include("footer.php"); ?>
 

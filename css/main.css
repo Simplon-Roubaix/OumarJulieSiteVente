@@ -1,7 +1,12 @@
 #produit {
   display: flex !important;
+  flex-flow: row wrap;
 }
 
+#ContainerProduit {
+  display: flex;
+  flex-direction: column;
+}
 
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300);

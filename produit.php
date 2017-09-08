@@ -24,7 +24,7 @@
 
    <div id="ContainerProduit">
 
-        <h2><?php echo $Reference[1]['Titre']; ?></h2><br/ >
+        <h2 id="H2"><?php echo $Reference[1]['Titre']; ?></h2><br/ >
 
 
 
@@ -34,7 +34,7 @@
   </div>
 
 
-<h2><?php echo $Reference[1]['Texte']; ?></h2>
+<p><?php echo $Reference[1]['Texte']; ?></p>
     <?php //include("footer.php"); ?>
 
 

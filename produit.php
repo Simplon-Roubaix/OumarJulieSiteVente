@@ -28,9 +28,11 @@
       <p class="card-text"><?php echo $value['Description']?></p>
     </div> -->
 
+    <p><?php echo $Reference[1]['Description'];?></p>
   </div>
-  <p><?php echo $Reference[1]['Description'];?></p>
 
+
+<h2><?php echo $Reference[1]['Texte']; ?></h2>
     <?php //include("footer.php"); ?>
 
 

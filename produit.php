@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Nos Bonbons</title>
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
 
@@ -13,13 +14,14 @@
 
 
 <?php include("header.php"); ?>
-<?php //include("footer.php"); ?>
 
-<h2><?php echo $Reference[1]['Titre']; ?></h2>
+<div id="produit">
+
 
   <figure class="imageBonbon">
     <img class="card-img-top" src="<?php echo $Reference[1]['Image']; ?>" alt="Card image cap">
   </figure>
+  <h2><?php echo $Reference[1]['Titre']; ?></h2>
 
   <p><?php echo $Reference[1]['Description'];?></p>
     <!-- <div class="card-block">
@@ -27,7 +29,9 @@
       <p class="card-text"><?php echo $value['Description']?></p>
     </div> -->
 
+  </div>
 
+    <?php //include("footer.php"); ?>
 
 
 

@@ -19,6 +19,7 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
+        <?php include "header.php"; ?>
         <?php include "cartes.php"; ?>
         <?php include "footer.php"; ?>
 

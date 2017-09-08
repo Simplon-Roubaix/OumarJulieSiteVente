@@ -12,7 +12,7 @@
     	 ?>
 
 
-<?php //include("header.php"); ?>
+<?php include("header.php"); ?>
 <?php //include("footer.php"); ?>
 
 <article class="card" style="width: 20rem;">

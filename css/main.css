@@ -20,7 +20,25 @@ body {
   padding: 20px 80px;
   background: #eee url(https://subtlepatterns.com/patterns/extra_clean_paper.png);
 }
-#logo {
+
+
+#h1 {
+  text-align: center;
+  font-family: "Candy";
+  color: red;
+}
+
+.container{
+  background-color: pink;
+}
+
+
+.jumbotron {
+  background-color: pink;
+}
+
+
+/*#logo {
   font-family: 'Open Sans', sans-serif;
   color: #555;
   text-transform: uppercase;
@@ -37,6 +55,7 @@ body {
   left: 8px;
   top: 32px;
 }
+
 #logo:after {
   background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, #555 25%, #555 50%, transparent 50%, transparent 75%, #555 75%);
   background-size: 4px 4px;
@@ -50,7 +69,7 @@ body {
   margin: 10px 0 0 0; padding: 25px 10px;
   border-top: 4px double #AAA;
   border-bottom: 4px double #AAA;
-}
+}*/
 
 #H2 {
   font-family: "Candy";
@@ -62,7 +81,7 @@ p {
   color:  #555;
 }
 
-@media (max-width: 320px){
+/*@media (max-width: 320px){
   #logo {
     font-family: 'Open Sans', sans-serif;
     color: #555;
@@ -94,4 +113,4 @@ p {
     border-top: 4px double #AAA;
     border-bottom: 4px double #AAA;
   }
-}
+}*/

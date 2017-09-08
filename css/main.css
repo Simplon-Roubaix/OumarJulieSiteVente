@@ -113,10 +113,13 @@ textarea {
         width: 100%;
         background-color: lightgrey;
         text-align: center;
-        padding-top: 2em;
-        padding-bottom: 2em;
+        padding-top: 1em;
+        padding-bottom: 1em;
         margin-top: 2em;
         color: white;
+    }
+    #footer i {
+        font-size: 2em;
     }
 
 
@@ -127,6 +130,12 @@ textarea {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
+    }
+    #footer {
+        letter-spacing: 0.3em;
+    }
+    #footer i:hover {
+        cursor: pointer;
     }
 }
 

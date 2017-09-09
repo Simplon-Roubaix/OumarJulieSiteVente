@@ -15,6 +15,10 @@
 
 <?php include("header.php"); ?>
 
+
+
+
+
 <div id="produit">
 <img src="<?php echo $Reference[1]['Image']; ?>" alt="..." class="img-thumbnail">
 
@@ -27,7 +31,7 @@
 
    <div id="ContainerProduit">
 
-        <h2 id="H2"><?php echo $Reference[1]['Titre']; ?></h2><br/ >
+        <h2 id="H2"><?php echo $Reference[1]['Titre']; ?></h2><br/ ><hr>
 
 
 

@@ -16,11 +16,14 @@
 <?php include("header.php"); ?>
 
 <div id="produit">
+<img src="<?php echo $Reference[1]['Image']; ?>" alt="..." class="img-thumbnail">
 
 
-     <figure class="imageBonbon">
+
+
+     <!-- <figure class="imageBonbon">
         <img class="card-img-top" src="<?php echo $Reference[1]['Image']; ?>" alt="Card image cap">
-    </figure>
+    </figure> -->
 
    <div id="ContainerProduit">
 

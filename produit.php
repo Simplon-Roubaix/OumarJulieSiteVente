@@ -40,6 +40,7 @@
 
   </div>
 
+<br/ ><hr>
 
 <p><?php echo $Reference[1]['Texte']; ?></p>
     <?php //include("footer.php"); ?>

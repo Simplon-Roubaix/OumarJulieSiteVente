@@ -1,3 +1,6 @@
+    <? include 'footerinfo.php' ?>
+    <link rel = "stylesheet" href = "font-awesome-4.7.0/css/font-awesome.min.css">
+
 
         <section id="footer">
             <p>Retrouvez nous sur les réseaux !</p>
@@ -24,4 +27,18 @@
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
     </body>
+
+  <body>
+   <footer id="footer">
+      <p><?php
+        echo $footer_info['titre_footer'];
+       ?></p>
+    <article>
+      <?php
+        echo $footer_info['icon_footer'];
+      ?>
+    </article>
+   </footer>
+ </body>
+>>>>>>> a09275e638bb5c7fe798c47eb9dde23203645a80
 </html>

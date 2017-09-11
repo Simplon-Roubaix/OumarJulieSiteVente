@@ -1,3 +1,4 @@
+
 /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
 
 /*
@@ -129,11 +130,17 @@ textarea {
 @font-face {
   font-family: "Candy";
    src: url(../font-awesome-4.7.0/candy_shop_2/Candy.ttf);
+
+@font-face {
+  font-family: "Candy";
+  src: url(../font-awesome-4.7.0/candy_shop_2/Candy.ttf);
+
 }
 
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300);
 @import url(https://fonts.googleapis.com/css?family=Squada+One);
+
 
 body #produit{
   background: #eee url(https://subtlepatterns.com/patterns/extra_clean_paper.png);
@@ -147,7 +154,21 @@ body #produit{
 
 #produit p {
   color:  #555;
+=======
+#produit {
+  display: flex !important;
+  flex-flow: row wrap;
 }
+
+#header {
+  background-color: #f8bbd0;
+
+}
+
+/*#ContainerProduit {
+  display: flex;
+  flex-direction: column;
+}*/
 
 
 @media only screen and (min-width: 700px) {
@@ -164,7 +185,13 @@ body #produit{
     #footer i:hover {
         cursor: pointer;
     }
+
+
+/*body {
+  background: #eee url(https://subtlepatterns.com/patterns/extra_clean_paper.png);
+
 }
+*/
 
 /* ==========================================================================
    Helper classes

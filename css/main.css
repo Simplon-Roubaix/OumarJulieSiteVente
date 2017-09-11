@@ -109,19 +109,6 @@ textarea {
         max-height: 200px;
     }
 
-    /* MISE EN FORME DU FOOTER */
-    #footer {
-        width: 100%;
-        background-color: lightgrey;
-        text-align: center;
-        padding-top: 1em;
-        padding-bottom: 1em;
-        margin-top: 2em;
-        color: white;
-    }
-    #footer i {
-        font-size: 2em;
-    }
 #produit {
   display: flex !important;
   flex-flow: row wrap;
@@ -130,13 +117,7 @@ textarea {
 @font-face {
   font-family: "Candy";
    src: url(../font-awesome-4.7.0/candy_shop_2/Candy.ttf);
-
-@font-face {
-  font-family: "Candy";
-  src: url(../font-awesome-4.7.0/candy_shop_2/Candy.ttf);
-
 }
-
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300);
 @import url(https://fonts.googleapis.com/css?family=Squada+One);
@@ -154,7 +135,7 @@ body #produit{
 
 #produit p {
   color:  #555;
-=======
+}
 #produit {
   display: flex !important;
   flex-flow: row wrap;
@@ -165,11 +146,19 @@ body #produit{
 
 }
 
-/*#ContainerProduit {
-  display: flex;
-  flex-direction: column;
-}*/
-
+    /* MISE EN FORME DU FOOTER */
+    #footer {
+        width: 100%;
+        background-color: lightgrey;
+        text-align: center;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        margin-top: 2em;
+        color: white;
+    }
+    #footer i {
+        font-size: 2em;
+    }
 
 @media only screen and (min-width: 700px) {
     /* SECTION CARTES ACCUEIL */

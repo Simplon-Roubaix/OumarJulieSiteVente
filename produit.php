@@ -38,12 +38,12 @@
        <p><?php echo $Reference[1]['Description'];?></p>
    </div>
 
-  </div>
 
 
 <p><?php echo $Reference[1]['Texte']; ?></p>
     <?php //include("footer.php"); ?>
 
+  </div>
 
 
 

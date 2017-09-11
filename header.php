@@ -11,7 +11,6 @@
   <body>
     <nav class="navbar navbar-inverse bg-inverse">
       <a class="navbar-brand" href="#">Bonbons</a>
-
     </nav>
 
 

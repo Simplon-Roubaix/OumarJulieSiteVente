@@ -27,7 +27,6 @@ include("header.php"); ?>
        <p><?php echo $Reference[1]['Description'];?></p>
    </div>
 
-  </div>
 
 <br/ ><hr>
 
@@ -49,7 +48,11 @@ include("header.php"); ?>
     <br>
     <p><?php echo $Reference[1]['Texte'];?></p>
 
-        </div>
+
+  </div>
+
+       
+
 
 
       </div>

@@ -118,12 +118,6 @@ textarea {
   font-family: "Candy";
    src: url(../font-awesome-4.7.0/candy_shop_2/Candy.ttf);
 }
-@font-face {
-  font-family: "Candy";
-  src: url(../font-awesome-4.7.0/candy_shop_2/Candy.ttf);
-
-}
-
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300);
 @import url(https://fonts.googleapis.com/css?family=Squada+One);

@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="fr"> 
+<html class="no-js" lang="fr">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -18,25 +18,25 @@
     </head>
     <body>
       <section id="cartes">
-<?php 
+<?php
 include "Reference.php";
 	foreach ($Reference as $key => $value) {
 
 	 ?>
 
 		<article class="card" style="width: 20rem;">
-			<figure class="imageBonbon"> 
+			<figure class="imageBonbon">
 			  <img class="card-img-top" src=<?php echo $value['Image']?> alt="Card image cap">
 			</figure>
 			  <div class="card-block">
 			    <h4 class="card-title"><?php echo $value['Titre']?></h4>
 			    <p class="card-text"><?php echo $value['Description']?></p>
-			    <a href="produit.php" class="btn btn-primary">Voir plus</a>
+			    <a href="produit.php?article=<?php echo $key?>" class="btn btn-primary">Voir plus</a>
 			  </div>
 		</article>
 <?php	}
 ?>
-	</section>		
+	</section>
 
 	</body>
 </html>

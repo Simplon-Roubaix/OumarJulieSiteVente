@@ -1,5 +1,3 @@
-
-
 <?php
 include "Reference.php";
 include("header.php"); ?>
@@ -8,11 +6,6 @@ include("header.php"); ?>
 $article = $_GET['article'];
 
 ?>
-
-
-
-
-
     <div class="container mt-5 mb-5">
       <div class="row">
         <div id="produit" class="col lg-6 md-6 xs-6" style="width: 15 rem;">
@@ -30,11 +23,6 @@ $article = $_GET['article'];
 <a href="" class="btn btn-primary">AJOUTER AU PANIER</a>
 
   </div>
-
-
-
-
-
       </div>
     </div>
 

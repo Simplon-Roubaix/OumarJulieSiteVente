@@ -18,23 +18,41 @@
     </head>
     <body>
       <section id="cartes">
-<?php
-include "Reference.php";
-	foreach ($Reference as $key => $value) {
+<?php      
+try //Connexion a la base de donnees
+{
+    $bdd = new PDO('mysql:host=localhost;dbname=siteBonbon;charset=utf8', 'root', 'root', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+}
+catch(Exception $e)
+{
+        die('Erreur : '.$e->getMessage());
+}
 
-	 ?>
 
-		<article class="card" style="width: 20rem;">
-			<figure class="imageBonbon">
-			  <img class="card-img-top" src=<?php echo $value['Image']?> alt="Card image cap">
-			</figure>
+$images = $bdd -> query('SELECT *
+FROM articles a
+INNER JOIN images i
+ON a.id_images = i.id');
+// $images->fetch();
+
+//$cartes = $bdd -> query('SELECT * FROM articles');
+
+foreach ($images as $key => $value) {
+    // var_dump($value);
+       ?>
+
+       <article class="card" style="width: 20rem;">
+            <figure class="imageBonbon">
+              <img class="card-img-top" src=<?php echo $value['source']?> alt="Card image cap">
+            </figure>
 			  <div class="card-block">
-			    <h4 class="card-title"><?php echo $value['Titre']?></h4>
-			    <p class="card-text"><?php echo $value['Description']?></p>
+                <h4 class="card-title"><?php echo $value['titre']?></h4>
+                <p class="card-text"><?php echo $value['accroche']?></p>
 			    <a href="produit.php?article=<?php echo $key?>" class="btn btn-primary">Voir plus</a>
 			  </div>
 		</article>
-<?php	}
+<?php
+}
 ?>
 	</section>
 

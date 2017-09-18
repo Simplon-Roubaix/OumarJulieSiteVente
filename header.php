@@ -28,10 +28,10 @@
               <a class="nav-link" href="index.php">Accueil <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#">Nos Bonbons<span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#">se connecter<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#">Nouveautés<span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#">s'inscrire<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="#">Assortiments<span class="sr-only">(current)</span></a>

@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="no-js" lang="fr">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -17,14 +17,8 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
-      <section id="inscription">
-        <form method="post" action="">
-          <input type="varchar" name="pseudo">
-          <input type="password" name="pass">
-          <input type="submit" name="inscrire">
-        </form>
+      <section id="cartes">
 <?php      
-   
 try //Connexion a la base de donnees
 {
     $bdd = new PDO('mysql:host=localhost;dbname=siteBonbon;charset=utf8', 'root', 'root', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
@@ -35,27 +29,28 @@ catch(Exception $e)
 }
 
 
-// Vérification de la validité des informations
-if (!empty($_POST['pass']) && !empty($_POST['pseudo'])){
-// Hachage du mot de passe
-$pass_hache = sha1($_POST['pass']);
+$images = $bdd -> query('SELECT *
+FROM articles a
+INNER JOIN images i
+ON a.id_images = i.id');
 
-// Insertion
-$req = $bdd->prepare('INSERT INTO login(pseudo, pass, date_inscription) VALUES(:pseudo, :pass, CURDATE())');
-$req->execute(array(
-'pseudo' => $_POST['pseudo'],
-'pass' => $pass_hache));
-    echo "votre inscription est bien prise en compte, accédez au site";
-    ?><a href="index.php">Bonbon</a><?php
-}
-else {
-    ?>  <?php
-    echo 'entrez des données correctes';
+foreach ($images as $key => $value) {
+       ?>
+
+       <article class="card" style="width: 20rem;">
+            <figure class="imageBonbon">
+              <img class="card-img-top" src=<?php echo $value['source']?> alt=<?php echo $value['alt'] ?>>
+            </figure>
+        <div class="card-block">
+                <h4 class="card-title"><?php echo $value['titre']?></h4>
+                <p class="card-text"><?php echo $value['accroche']?></p>
+          <a href="produit.php?article=<?php echo $key?>" class="btn btn-primary">Voir plus</a>
+        </div>
+    </article>
+<?php
 }
 ?>
+  </section>
 
-
-
-      </section>
-      </body>
-      </html>
+  </body>
+</html>

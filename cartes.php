@@ -36,3 +36,9 @@ foreach ($images as $key => $value) {
 
 	</body>
 </html>
+<<<<<<< HEAD
+=======
+
+	</section>
+
+>>>>>>> 6bf49f403aa2d5a0a7fe2cc5a52068ef0919b8b9

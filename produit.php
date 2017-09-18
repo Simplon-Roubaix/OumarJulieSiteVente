@@ -19,12 +19,26 @@ $article = $_GET['id'];
  $produit= $reponse->fetch();
  {
 ?>
+
+<?php
+
+
+ $donnees = $bdd->prepare('SELECT * FROM images WHERE id_articles=?');
+ $donnees->execute([$article]);
+ $img=  $donnees->fetch();
+ {
+
+ ?>
+
+
     <div class="container mt-5 mb-5">
       <div class="row">
         <div id="produit" class="col lg-6 md-6 xs-6" style="width: 15 rem;">
-          <img class="card-img" src="<?php echo $produit['Image']; ?>" alt="Card image cap">
+            <img class="card-img-top" src=<?php echo $img['source']?> alt="Card image cap">
         </div>
-
+<?php
+}
+ ?>
         <div class="col lg-4 md-4 xs-4">
 
           <h2 id="H2"><?php echo $produit['titre']; ?></h2><br/ >

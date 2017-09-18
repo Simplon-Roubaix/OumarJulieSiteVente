@@ -1,5 +1,5 @@
       <section id="cartes">
-<?php      
+<?php
 try //Connexion a la base de donnees
 {
     $bdd = new PDO('mysql:host=localhost;dbname=siteBonbon;charset=utf8', 'root', 'root', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
@@ -25,10 +25,17 @@ foreach ($images as $key => $value) {
 			  <div class="card-block">
                 <h4 class="card-title"><?php echo $value['titre']?></h4>
                 <p class="card-text"><?php echo $value['accroche']?></p>
-			    <a href="produit.php?article=<?php echo $key?>" class="btn btn-primary">Voir plus</a>
+			    <a href="produit.php?id=<?php echo $value['id']?>" class="btn btn-primary">Voir plus</a>
 			  </div>
 		</article>
 <?php
 }
 ?>
+
 	</section>
+
+	</body>
+</html>
+
+	</section>
+

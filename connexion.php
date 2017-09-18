@@ -18,12 +18,23 @@
     </head>
     <body>
       
-      <section id="connexion">
-        <form method="post" action="connexion_post.php">
-          <input type="varchar" name="pseudo">
-          <input type="password" name="pass">
-          <input type="submit" name="inscrire">
-        </form>
+        <!-- Formulaire html -->
+      <section id="connexion" class="col-md-4">
+        <article class="login-panel panel panel-default">
+            <h3 class="panel-title">Connexion</h3>
+            <div class="panel-body">
+                <form method="post" action="connexion_post.php">
+                  <div class="form-group">
+                      <input class="form-control" placeholder="Pseudo" name="pseudo" type="varchar" value="">
+                  </div> 
+                  <div class="form-group">
+                      <input class="form-control" placeholder="Mot de passe" name="pass" type="password" value="">
+                  </div>
+                  <input type="submit" name="inscrire">
+                </form>
+            </div>
+        </article>
+      </section>
 
 
 </section>

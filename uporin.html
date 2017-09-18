@@ -1,3 +1,5 @@
+<?php 
+session_start(); ?>
 <!doctype html>
 <html class="no-js" lang="fr">
     <head>
@@ -17,6 +19,15 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
+<?php
+// Suppression des variables de session et de la session
+$_SESSION = array();
+session_destroy();
+
+// Suppression des cookies de connexion automatique
+setcookie('login', '');
+setcookie('pass_hache', '');
+?>
         <a href="inscription.php">s'inscrire</a>
         <br>
         <a href="connexion.php">se connecter</a>

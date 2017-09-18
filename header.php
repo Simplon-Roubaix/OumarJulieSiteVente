@@ -1,4 +1,4 @@
-<?php session_start();
+<?php session_start(); 
 ?>
 <!DOCTYPE html>
 <html>
@@ -30,13 +30,16 @@
               <a class="nav-link" href="index.php">Accueil de <?php echo $_SESSION['pseudo']?> <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#">se connecter<span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="connexion.php">se connecter<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#">s'inscrire<span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="inscription.php">s'inscrire<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="#">Assortiments<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="uporin.html">Déconnexion<span class="sr-only">(current)</span></a>
             </li>
           </ul>
         </div>

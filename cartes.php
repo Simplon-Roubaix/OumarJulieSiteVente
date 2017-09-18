@@ -18,7 +18,7 @@
     </head>
     <body>
       <section id="cartes">
-<?php      
+<?php
 try //Connexion a la base de donnees
 {
     $bdd = new PDO('mysql:host=localhost;dbname=siteBonbon;charset=utf8', 'root', 'root', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));

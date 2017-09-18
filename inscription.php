@@ -1,3 +1,5 @@
+<?php session_start();
+?>
 <!doctype html>
 <html>
     <head>
@@ -47,9 +49,10 @@ $req->execute(array(
 'pass' => $pass_hache));
     echo "votre inscription est bien prise en compte, accédez au site";
     ?><a href="index.php">Bonbon</a><?php
+    $_SESSION['pseudo'] = $_POST['pseudo'];
 }
 else {
-    ?>  <?php
+
     echo 'entrez des données correctes';
 }
 ?>

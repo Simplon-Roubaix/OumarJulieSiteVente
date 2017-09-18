@@ -38,7 +38,6 @@ ON a.id_images = i.id');
 //$cartes = $bdd -> query('SELECT * FROM articles');
 
 foreach ($images as $key => $value) {
-    // var_dump($value);
        ?>
 
        <article class="card" style="width: 20rem;">
@@ -48,7 +47,7 @@ foreach ($images as $key => $value) {
 			  <div class="card-block">
                 <h4 class="card-title"><?php echo $value['titre']?></h4>
                 <p class="card-text"><?php echo $value['accroche']?></p>
-			    <a href="produit.php?article=<?php echo $key?>" class="btn btn-primary">Voir plus</a>
+			    <a href="produit.php?id=<?php echo $value['id']?>" class="btn btn-primary">Voir plus</a>
 			  </div>
 		</article>
 <?php

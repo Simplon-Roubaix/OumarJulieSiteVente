@@ -33,17 +33,13 @@ $images = $bdd -> query('SELECT *
 FROM articles a
 INNER JOIN images i
 ON a.id_images = i.id');
-// $images->fetch();
-
-//$cartes = $bdd -> query('SELECT * FROM articles');
 
 foreach ($images as $key => $value) {
-    // var_dump($value);
        ?>
 
        <article class="card" style="width: 20rem;">
             <figure class="imageBonbon">
-              <img class="card-img-top" src=<?php echo $value['source']?> alt="Card image cap">
+              <img class="card-img-top" src=<?php echo $value['source']?> alt=<?php echo $value['alt'] ?>>
             </figure>
 			  <div class="card-block">
                 <h4 class="card-title"><?php echo $value['titre']?></h4>

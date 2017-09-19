@@ -9,7 +9,7 @@ die('Erreur : ' . $e->getMessage());
 }
 
 $req = $bdd->prepare('INSERT INTO articles (titre, accroche, description)
-VALUES(:titre, :accroche, :description )');
+             VALUES(:titre, :accroche, :description )');
 
 
 $req->execute(array(
@@ -24,10 +24,16 @@ $req->execute(array(
  ?>
 
  <?php
-//Premiere partie tu récupère le nom de l'image :
+
 $image = basename($_FILES['image']['name']);
-//Ensuite tu fais ton système d'upload
-//Tu vérifie d'abord, si c'est bien une image comme suis :
+
 $dossier = '../img';<br> $extensions = array('.png', '.gif', '.jpg', '.jpeg');
+$extension = strrchr($_FILES['image']['name'], '.');
+
+
+$req = $bdd->prepare('INSERT INTO images(source)
+             VALUES(:source)');
+$req->execute(array($fichier));
+$req->closeCursor();
 
  ?>

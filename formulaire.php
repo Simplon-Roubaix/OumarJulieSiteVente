@@ -7,10 +7,10 @@
   <body>
 
 
-<form class="" action="" method="post">
-<label for="titre">Titre</label></label> <input type="text" name="Titre" value=""><br />
-<label for="titre">Accroche</label></label> <input type="text" name="Accroche" value=""><br />
-<label for="titre">Description</label></label> <input type="text" name="Description" value=""><br />
+<form class="" action="formulaire_post.php" method="post">
+<label for="titre">Titre</label></label> <input type="text" name="titre" value=""><br />
+<label for="titre">Accroche</label></label> <input type="text" name="accroche" value=""><br />
+<label for="titre">Description</label></label> <input type="text" name="description" value=""><br />
 <input type="file" name="fichier"/><br />
 <button type="submit" name="button">Créer</button>
 

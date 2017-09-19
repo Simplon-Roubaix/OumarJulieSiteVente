@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
-    <body>
+    <body id="connecter">
       
         <!-- Formulaire html -->
       <section id="connexion" class="col-md-4">

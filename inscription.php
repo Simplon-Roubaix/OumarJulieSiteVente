@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
-    <body>
+    <body id="inscrire">
 <!-- Formulaire html -->
       <section id="inscription" class="col-md-4">
         <article class="login-panel panel panel-default">
@@ -49,7 +49,7 @@ catch(Exception $e)
 
 
 // Vérification de la validité des informations
-if (!empty($_POST['pass']) && !empty($_POST['pseudo'])){
+if (!empty($_POST['pass']) || !empty($_POST['pseudo'])){
 
     // Hachage du mot de passe
     $pass_hache = sha1($_POST['pass']);
@@ -57,12 +57,12 @@ if (!empty($_POST['pass']) && !empty($_POST['pseudo'])){
     $req = $bdd -> prepare('SELECT pseudo FROM login WHERE pseudo = :pseudo');
     $req->execute(array( 'pseudo' => $_POST['pseudo']));
     $existe = $req->fetch();
-    var_dump($existe);
-    if($existe){ //verification de l'existence du pseudo
+    
+    if($existe || empty($_POST['pass']) || empty($_POST['pseudo'])){ //verification de l'existence du pseudo
       echo 'Ce pseudo est déja utilisé ou un des champs est vide';
     }
     
-    else{
+    elseif (!$existe && !empty($_POST['pass']) && !empty($_POST['pseudo'])){
     // Insertion du pseudo dans la base de données
       $req = $bdd->prepare('INSERT INTO login(pseudo, pass, date_inscription) VALUES(:pseudo, :pass, CURDATE())');
       $req->execute(array(
@@ -74,7 +74,9 @@ if (!empty($_POST['pass']) && !empty($_POST['pseudo'])){
       <a href="index.php">Bonbon</a><?php
       $_SESSION['pseudo'] = $_POST['pseudo']; // affichage du pseudo
     }
-}
+}         
+
+
 
 ?>
    </body>

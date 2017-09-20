@@ -25,15 +25,24 @@ $req->execute(array(
 
  <?php
 
-$image = basename($_FILES['image']['name']);
+       if (isset($_FILES['source']) AND $_FILES['source']['error'] == 0)
+        {
+                if ($_FILES['source']['size'] <= 1000000)
+                {
+                        $infossource = pathinfo($_FILES['source']['name']);
+                        $extension_upload = $infossource['extension'];
+                        $extensions_autorisees = array('jpg', 'jpeg', 'gif', 'png');
+                        if (in_array($extension_upload, $extensions_autorisees))
+                        {
+                                move_uploaded_file($_FILES['source']['tmp_name'], 'img/' . $_FILES['source']['name']);
+                                echo "L'envoi a bien été effectué !";
+                                $req = $bdd->prepare('INSERT INTO images(source, alt) VALUES(:source, :alt)');
+                                $req->execute(array(
+                                    'source' => $_FILES['source']['name'],
+                                    'alt' => 'Image bonbon'
 
-$dossier = '../img';<br> $extensions = array('.png', '.gif', '.jpg', '.jpeg');
-$extension = strrchr($_FILES['image']['name'], '.');
-
-
-$req = $bdd->prepare('INSERT INTO images(source)
-             VALUES(:source)');
-$req->execute(array($fichier));
-$req->closeCursor();
-
- ?>
+                                    ));
+                        }
+                }
+        }
+        ?>

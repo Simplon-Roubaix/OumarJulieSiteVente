@@ -38,9 +38,10 @@ if (!$resultat)
 }
 else
 {
-    echo 'Vous êtes connecté !' . $_SESSION['pseudo'];
+    echo 'Bonjour ' . $_SESSION['pseudo'];
 
-     ?><a href="index.php">Bonbon</a><?php
+     ?>
+     <br><a href="index.php">-> Bonbon</a><?php
 }
 ?>
 

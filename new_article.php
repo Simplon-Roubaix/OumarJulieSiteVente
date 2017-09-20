@@ -29,7 +29,7 @@
                     <input class="form-control" type="varchar" name="accroche" placeholder="Phrase d'accroche">
 
 <!--                     <input class="form-control" type="text" name="texte" placeholder="Texte"> -->
-                    <input type="hidden" name="MAX_FILE_SIZE" value="123456" />
+                    <input type="hidden" name="MAX_FILE_SIZE" value="400000" />
                     <input class="form-control" type="file" name="source" placeholder="img ...">
 
                 <button type="submit" class="signbuttons btn btn-primary">Publier</button>

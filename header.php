@@ -27,16 +27,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="index.php">Accueil de <?php echo $_SESSION['pseudo']?> <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="index.php">Bonjour <?php echo $_SESSION['pseudo']?> <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="connexion.php">se connecter<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="new_article.php">ajouter bonbon<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Assortiments<span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="new_article.php">Publier un article<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="uporin.html">Déconnexion<span class="sr-only">(current)</span></a>

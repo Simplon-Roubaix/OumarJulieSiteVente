@@ -33,7 +33,7 @@
               <a class="nav-link" href="connexion.php">se connecter<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="inscription.php">s'inscrire<span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="new_article.php">ajouter bonbon<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="#">Assortiments<span class="sr-only">(current)</span></a>

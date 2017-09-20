@@ -23,7 +23,10 @@ $pseudo = $_POST['pseudo'];
 $pass_hache = sha1($_POST['pass']);
 
 // Vérification des identifiants
-$req = $bdd -> prepare('SELECT * FROM login WHERE pseudo = :pseudo AND pass = :pass');
+$req = $bdd -> prepare('SELECT * 
+    FROM login 
+    WHERE pseudo = :pseudo AND pass = :pass');
+
 $req->execute(array(
     'pseudo' => $pseudo,
     'pass' => $pass_hache));

@@ -23,7 +23,7 @@ $article = $_GET['id'];
 <?php
 
 
- $donnees = $bdd->prepare('SELECT * FROM images WHERE id_articles=?');
+ $donnees = $bdd->prepare('SELECT * FROM images WHERE id=?');
  $donnees->execute([$article]);
  $img=  $donnees->fetch();
  {

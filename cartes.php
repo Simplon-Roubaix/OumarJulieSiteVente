@@ -13,7 +13,7 @@ catch(Exception $e)
 $images = $bdd -> query('SELECT *
 FROM articles a
 INNER JOIN images i
-ON a.id_images = i.id');
+ON a.id = i.id');
 
 foreach ($images as $key => $value) {
        ?>
@@ -30,6 +30,11 @@ foreach ($images as $key => $value) {
 		</article>
 <?php
 }
+
+
+
+
+
 ?>
 
 	</section>

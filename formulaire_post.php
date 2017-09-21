@@ -34,15 +34,35 @@ $req->execute(array(
                         $extensions_autorisees = array('jpg', 'jpeg', 'gif', 'png');
                         if (in_array($extension_upload, $extensions_autorisees))
                         {
-                                move_uploaded_file($_FILES['source']['tmp_name'], 'img/' . $_FILES['source']['name']);
+                                move_uploaded_file($_FILES['source']['tmp_name'], 'img/' . basename( $_FILES['source']['name']));
                                 echo "L'envoi a bien été effectué !";
-                                $req = $bdd->prepare('INSERT INTO images(source, alt) VALUES(:source, :alt)');
+                                $req = $bdd->prepare('INSERT INTO images (source, alt) VALUES(:source, :alt)');
                                 $req->execute(array(
-                                    'source' => $_FILES['source']['name'],
+                                    'source' => 'img/' . basename($_FILES['source']['name']),
                                     'alt' => 'Image bonbon'
 
                                     ));
                         }
                 }
         }
-        ?>
+
+        $images = $bdd -> query('SELECT *
+        FROM articles a
+        INNER JOIN images i
+        ON a.id = i.id');
+
+        foreach ($images as $key => $value) {
+               ?>
+
+               <article class="card" style="width: 20rem;">
+                    <figure class="imageBonbon">
+                      <img class="card-img-top" src=<?php echo $value['source']?> alt=<?php echo $value['alt'] ?>>
+                    </figure>
+        			  <div class="card-block">
+                        <h4 class="card-title"><?php echo $value['titre']?></h4>
+                        <p class="card-text"><?php echo $value['accroche']?></p>
+        			    <a href="produit.php?id=<?php echo $value['id']?>" class="btn btn-primary">Voir plus</a>
+        			  </div>
+        		</article>
+<?php
+ }?>

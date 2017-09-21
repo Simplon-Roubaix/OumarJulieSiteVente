@@ -11,7 +11,7 @@
 <label for="titre">Titre</label></label> <input type="text" name="titre" value=""><br />
 <label for="titre">Accroche</label></label> <input type="text" name="accroche" value=""><br />
 <label for="titre">Description</label></label> <input type="text" name="description" value=""><br />
-<input type="hidden" name="MAX_FILE_SIZE" value="1123456">
+<input type="hidden" name="MAX_FILE_SIZE" value="368753">
 <input type="file" name="source"/><br />
 <button type="submit" name="button">Créer</button>
 

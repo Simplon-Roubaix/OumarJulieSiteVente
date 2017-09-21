@@ -30,6 +30,11 @@ foreach ($images as $key => $value) {
 		</article>
 <?php
 }
+
+
+
+
+
 ?>
 
 	</section>
@@ -38,4 +43,3 @@ foreach ($images as $key => $value) {
 </html>
 
 	</section>
-

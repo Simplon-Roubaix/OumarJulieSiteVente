@@ -4,7 +4,7 @@
        ?>
        <article class="card" style="width: 20rem;">
             <figure class="imageBonbon">
-              <img class="card-img-top" src="<?php echo $value['source']?>" alt="<?php echo $value['alt'] ?>">
+              <img class="card-img-top" src="../<?php echo $value['source']?>" alt="<?php echo $value['alt'] ?>">
             </figure>
 			  <div class="card-block">
                 <h4 class="card-title"><?php echo $value['titre']?></h4>

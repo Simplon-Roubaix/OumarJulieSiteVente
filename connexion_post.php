@@ -4,9 +4,7 @@ session_start();
 
 // On s'amuse à créer quelques variables de session dans $_SESSION
 $_SESSION['pseudo'] = $_POST['pseudo'];
-?>
 
-    <?php 
 try //Connexion a la base de donnees
 {
     $bdd = new PDO('mysql:host=localhost;dbname=siteBonbon;charset=utf8', 'root', 'root', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
@@ -40,11 +38,10 @@ if (!$resultat)
     <?php
 }
 else
-{
-    echo 'Bonjour ' . $_SESSION['pseudo'];
-
-     ?>
-     <br><a href="index.php">-> Bonbon</a><?php
+{   
+    ob_start();
+    header('Location: controller/index.php');
+    ob_end_flush();
 }
 ?>
 

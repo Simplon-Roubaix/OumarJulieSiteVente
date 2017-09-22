@@ -1,23 +1,7 @@
-      <section id="cartes">
-<?php
-try //Connexion a la base de donnees
-{
-    $bdd = new PDO('mysql:host=localhost;dbname=siteBonbon;charset=utf8', 'root', 'root', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-}
-catch(Exception $e)
-{
-        die('Erreur : '.$e->getMessage());
-}
+       <section id="cartes">
 
-
-$images = $bdd -> query('SELECT *
-FROM articles a
-INNER JOIN images i
-ON a.id = i.id');
-
-foreach ($images as $key => $value) {
+<?php foreach ($cartes as $key => $value) {
        ?>
-
        <article class="card" style="width: 20rem;">
             <figure class="imageBonbon">
               <img class="card-img-top" src="<?php echo $value['source']?>" alt="<?php echo $value['alt'] ?>">
@@ -28,14 +12,5 @@ foreach ($images as $key => $value) {
 			    <a href="produit.php?id=<?php echo $value['id']?>" class="btn btn-primary">Voir plus</a>
 			  </div>
 		</article>
-<?php
-}
-?>
-
-	</section>
-
-	</body>
-</html>
-
-	</section>
-
+<?php } ?>
+</section>

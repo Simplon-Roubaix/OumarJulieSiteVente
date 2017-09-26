@@ -1,5 +1,5 @@
-<?php session_start(); 
-?>
+<?php session_start()
+?> 
 <!DOCTYPE html>
 <html>
   <head>
@@ -34,7 +34,7 @@
               <a class="nav-link" href="nvl_article.php">Publier un article<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="../uporin.html">Déconnexion<span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="../uporin.php">Déconnexion<span class="sr-only">(current)</span></a>
             </li>
           </ul>
         </div>

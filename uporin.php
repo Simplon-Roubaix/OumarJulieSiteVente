@@ -19,30 +19,14 @@ session_start(); ?>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
-    <section id="upOrIn">
-<?php
-// Suppression des variables de session et de la session
-$_SESSION = array();
-session_destroy();
+        <section id="upOrIn">
+            <h2>Bienvenue !</h2>
 
-// Suppression des cookies de connexion automatique
-setcookie('login', '');
-setcookie('pass_hache', '');
-?>
-<h2>Bienvenue sur le site de bonbons</h2>
+            <a type="button" class="btn btn-primary btn-lg" href="controller/inscription.php">s'inscrire</a>
 
-<a type="button" class="btn btn-primary btn-lg" href="inscription.php">s'inscrire</a>
+            <br>
 
-<br>
-
-<a type="button" class="btn btn-secondary btn-lg" href="connexion.php">se connecter</a>
-
-
-
-
-
-
-
-    </section>
+            <a type="button" class="btn btn-secondary btn-lg" href="controller/connexion.php">se connecter</a>
+        </section>
     </body>
 </html>

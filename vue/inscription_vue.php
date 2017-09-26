@@ -10,20 +10,19 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/bootstrap.css/bootstrap.css">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/bootstrap.css/bootstrap.css">
 
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="../css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
-    <body id="connecter">
-      
-        <!-- Formulaire html -->
-      <section id="connexion" class="col-md-4">
+    <body id="inscrire">
+<!-- Formulaire html -->
+      <section id="inscription" class="col-md-4">
         <article class="login-panel panel panel-default">
-            <h3 class="panel-title">Connexion</h3>
+            <h3 class="panel-title">Inscription</h3>
             <div class="panel-body">
-                <form method="post" action="connexion_post.php">
+                <form method="post" action="../controller/inscription.php">
                   <div class="form-group">
                       <input class="form-control" placeholder="Pseudo" name="pseudo" type="varchar" value="">
                   </div> 
@@ -35,9 +34,5 @@
             </div>
         </article>
       </section>
-
-
-</section>
-</body>
+    </body>
 </html>
-

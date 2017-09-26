@@ -27,6 +27,11 @@ session_start(); ?>
             <br>
 
             <a type="button" class="btn btn-secondary btn-lg" href="controller/connexion.php">se connecter</a>
+            <?php
+// Suppression des variables de session et de la session
+$_SESSION = array();
+session_destroy();
+?>
         </section>
     </body>
 </html>

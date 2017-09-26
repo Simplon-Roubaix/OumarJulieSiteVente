@@ -57,3 +57,5 @@ $article = $_GET['id'];
     }
     include("footer.php");
      ?>
+
+     
